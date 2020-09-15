@@ -1,0 +1,23 @@
+.list {
+  height: 300px;
+}
+
+.list .onedimentionArray {
+  display: flex;
+}
+
+.list .box {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  margin-right: 30px;
+  border: 1px solid rgb(146, 146, 12);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+}
+
+.first {
+}
