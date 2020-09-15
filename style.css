@@ -19,5 +19,14 @@
   text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
 }
 
-.first {
+.firstgrade {
+  background-color: red;
+}
+
+.secondgrade {
+  background-color: blue;
+}
+
+.thirdgrade {
+  background-color: pink;
 }
