@@ -1,7 +1,3 @@
-.list {
-  height: 300px;
-}
-
 .list .onedimentionArray {
   display: flex;
 }
@@ -10,7 +6,7 @@
   height: 100px;
   width: 100px;
   background-color: white;
-  margin-right: 30px;
+  margin-right: 10px;
   border: 1px solid rgb(146, 146, 12);
   font-size: 30px;
   display: flex;
@@ -29,4 +25,19 @@
 
 .thirdgrade {
   background-color: pink;
+}
+
+.box2 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  margin-right: 30px;
+  border: 1px solid rgb(146, 146, 12);
+  font-size: 30px;
+
+  text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+}
+.grade {
+  display: flex;
+  margin-bottom: 30px;
 }
