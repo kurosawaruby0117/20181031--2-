@@ -10,6 +10,22 @@ const SecondLow = document.getElementsByClassName("grade_2");
 const SecondLowSecondLow = Array.from(SecondLow[0].querySelectorAll(".box2"));
 const ThirdLow = document.getElementsByClassName("grade_3");
 const ThirdLowThirdLow = Array.from(ThirdLow[0].querySelectorAll(".box2"));
+const ArrayIndex = document.querySelector("#indexNumber");
+const ResultIndex = document.querySelector("#ResultIndex");
+const start = document.querySelector("#start");
+const showingArrayAddress = document.querySelector("#showingArrayAddress");
+const ArrayIndexAddress = Array.from(document.querySelectorAll(".box3"));
+let ArrayMember = [
+  "카스밍",
+  "시즈쿠",
+  "리나",
+  "아유무",
+  "세츠나",
+  "아이",
+  "카나타",
+  "카린",
+  "엠마",
+];
 function handleLowClick(e) {
   arrayNumber2.innerText = e.target.value;
   arrayNumber2_1.innerText = e.target.id;
@@ -19,6 +35,18 @@ function handleMemberClick(e) {
   arrayNumber.innerText = e.target.id;
   console.log(e.target.id);
   arrayValue.innerText = e.target.innerText;
+}
+function clickStartButton() {
+  i = 0;
+  run = setInterval(function () {
+    if (i === 9) i = 0;
+    ArrayIndex.innerText = i;
+    ResultIndex.innerText = ArrayMember[i];
+    i++;
+  }, 1000);
+}
+function showingIndexAddress(e) {
+  showingArrayAddress.innerText = e.target.id;
 }
 member.forEach(function (e) {
   e.addEventListener("click", handleMemberClick);
@@ -34,4 +62,8 @@ ThirdLowThirdLow.forEach(function (e) {
   e.addEventListener("click", handleLowClick);
 });
 
-console.log(ThirdLowThirdLow);
+ArrayIndexAddress.forEach(function (e) {
+  e.addEventListener("click", showingIndexAddress);
+});
+
+start.addEventListener("click", clickStartButton);

@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="myInfo">
-      <h1>1주차: 배열과 클래스</h1>
+      <h1>2주차: 배열과 클래스</h1>
       <h2>20181031 이창진</h2>
       <h5><a href="https://kurosawaruby0117.github.io/algorithm/">온라인으로 보기</a></h5>
     </header>
@@ -19,7 +19,7 @@
             <ul class="index_small">
               <li><span id="first_first"><a href="#main_first_first">1-1. 배열이란 무엇인가</a></span></li>
               <li><span id="first_second"><a href="#main_first_second">1-2. 배열의 예시</a></span></li>
-              <li><span id="first_third"><a href="#main_first_second">1-3. 기타 등등</a></span></li>
+              <li><span id="first_third"><a href="#main_first_third">1-3. 베열의 관한 다른 이야기</a></span></li>
             </ul>
           </li>
           <li class="index_big">
@@ -87,9 +87,65 @@
                             <button class="box2 seventh" value="2" id="2" style="color:#d5ace7">카나타</button>    
                         </div>   
                         <h2 class="arrayName2">니지동 멤버 배열[<span class="arraynumber2-1"></span>][<span class="arraynumber2-2"></span>]=<span class="arrayValue2"></span></h2>
+                        <p>
+                            다차원 배열은 인간이 사용하기 편하게, 가상의 차원을 만들어 행과 열을 이용해 표현하는 프로그래밍 기법입니다. 프로그래머의 표현 방법에 따라 (y,x)나 (x,y)의 설정이 자유롭지만, 대부분 후자를 따르고 있습니다. 
+                        </p>
+
                 </li>
             </ul>
-    
+            <h3 class="p_index_title" id="main_first_third"><a href="#top">1-3. 베열의 관한 다른 이야기</a></h3>
+            <ul>
+                <li>
+                    <h4>1. 배열을 사용하는 이유:반복문을 사용할 수 있음</h4>
+                    <div style="background:#0c1021;color:#f8f8f8; height:100px;">
+                        <span style="color:#fbde2d">void</span>
+                        <span style="color:#ff6400">LoopShowing(int member[],int length)</span>
+                        {
+                        <div style="margin-left: 20px;">
+                            for(int i=0;i<span><</span>randomnumber;i++){
+                        </div>
+                        <div style="margin-left: 40px;">
+                        </div>
+                        <div style="margin-left: 40px;">
+                            std::cout<<<span>member[<span id="indexNumber">i</span>]</span>;
+                        </div>
+                        
+                        <div style="margin-left: 20px;">
+                        }
+                        </div>
+                        <div>
+                        }
+                        </div>
+                   
+                    </div>
+                    <button id="start">반복문 출력값 보기</button>
+                    결과:<span id="ResultIndex"></span>
+                </li>
+                <li>
+                    <h4>2.메모리에 저장되는 방식</h4>
+                    <div class="AddressArray">
+                        <button class="box3 first" id="FF0" style="color:#fdfd96">카스밍</button>
+                        <button class="box3 second"id="FF4" style="color:#a1a5a4">리나</button>
+                        <button class="box3 third" id="FF8" style="color:#add8e6">시즈쿠</button>
+                        <button class="box3 forth"  id="FF12" style="color:#ffb6c1">아유무</button>
+                        <button class="box3 fifth" id="FF16" style="color:#f76865">세츠나</button>
+                        <button class="box3 sixth" id="FF20" style="color:#ffa359">아이</button>
+                        <button class="box3 seventh" id="FF24" style="color:#d5ace7">카나타</button>
+                        <button class="box3 eighth" id="FF28" style="color:#000080">카린</button>
+                        <button class="box3 ninth" id="FF32" style="color:#adec92">엠마</button>
+                    </div>
+                    <p>
+                        배열의 이름과, 첫 인덱스의 주소값은 같습니다. 배열이 선언된 자료형마다 사이즈가 하나씩 더해져, 그 메모리 주소에
+                        저장됩니다. 여기선 하나당 4바이트라고 가정하겠습니다. 2차원 배열 역시 저장될때 이런 형태로 나열되어 저정됩니다.
+                    </p>
+                    <div style="font-size: 30px;">선택한 배열의 주소(배열 이름의 주소:FF0):<span id="showingArrayAddress"></span></div>
+                    <p>
+                        또한 배열은 파라미터로 넘길때, Call by Refence 즉 주소값이 복사됩니다. 코드를 보면, 메인함수에서 넘긴 배열의 주소와, 파라미터로 받은 배열의 주소가 같음을 알수 있습니다.
+                        <button><a href="https://repl.it/@GoldenRuby/ThoroughOrderlyLocations#main.cpp" target="_blank">소스코드 확인</a></button>
+                        배열을 파라미터로 넘길때, 받는 함수는 그 배열의 크기를 알 수 없으니, 배열의 크기도 같이 넘겨줘야합니다.
+                    </p>
+                </li>
+            </ul>
         </p>  
        
     </div>
