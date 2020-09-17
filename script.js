@@ -43,7 +43,7 @@ function clickStartButton() {
     ArrayIndex.innerText = i;
     ResultIndex.innerText = ArrayMember[i];
     i++;
-  }, 3000);
+  }, 1500);
 }
 function showingIndexAddress(e) {
   showingArrayAddress.innerText = e.target.id;
