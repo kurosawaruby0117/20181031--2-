@@ -11,7 +11,7 @@
   background-color: white;
   margin-right: 10px;
   border: 1px solid rgb(146, 146, 12);
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +36,7 @@
   background-color: white;
   margin-right: 30px;
   border: 1px solid rgb(146, 146, 12);
-  font-size: 30px;
+  font-size: 20px;
 
   text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
 }
@@ -46,7 +46,7 @@
   width: 100px;
   background-color: white;
   border: 1px solid rgb(146, 146, 12);
-  font-size: 30px;
+  font-size: 20px;
   margin-right: 20px;
   text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
 }
